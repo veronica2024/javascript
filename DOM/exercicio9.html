@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM-javascript</title>
+</head>
+<body>
+    <style>
+        body{
+            background-color:blue;
+            color:yellowgreen;
+            font:normal 18px arial;
+           text-align: center; 
+
+        }
+    </style>
+    <h1>Entendendo o DOM</h1>
+    <p>postando aqui os resultados</p>
+    <p>Aprendendo a usar o <strong> DOM </strong>  em javascript</p>
+
+    <div class="msg">Clique aqui!!!</div>
+    <script>
+       // window.document.write("veja o poder do DOM ")// exibe texto html
+      // window.document.write(window.document.charset)// mapa de caractere
+       // window.document.write(window.document.URL)// exibe enderço do texto
+        //var p1 = window.document.getElementsByTagName('p')[1]//
+       // window.document.write('esse é o texto: '+ p1.innerHTML)//
+        //p1.style.background = 'red'//
+      // var corpo = window.document.body//
+       // corpo.style.background = "pink"//
+        // var p1 = window.document.getElementsByTagName('p')[1]//
+        // window.alert(p1.innerHTML)//
+         //window.alert(p1.innerText)//retorna somente os texto//
+//var d = window.document.getElementsByClassName('msg')[0]//
+//d.style.background = 'white'//
+//d.style.color = 'black'//
+//d.innerText = 'estou aguardando...'//
+var d = window.document.querySelector('div.msg')// quando class usa . id usa #
+d.style.backgroundcolor = 'yellow'
+    </script>
+   
+        
+    
+    
+</body>
+</html>
