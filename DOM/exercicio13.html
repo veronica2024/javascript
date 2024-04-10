@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>calculadora</title>
+    <style>
+body{
+font: normal 18pt arial;
+
+}
+input{
+    font: normal 18pt arial; 
+    width: 250pxpx;
+} 
+div#eres{
+    margin-top: 20px;
+}
+
+
+
+
+    </style>
+</head>
+<body> 
+    <div>
+    <h1>calculadora</h1>
+
+   
+<span>N1</span>
+<input type="button" name="n1"><br>
+
+<input type="button" value="calcular quadrado"><br>
+<input type="button" value="calcular cubo"><br>
+<input type="button" value="calcular raiz quadrada"><br>
+
+
+<span>N2</span>
+<input type="button" name="n2" id="n2"><br>
+
+<input type="button" value="somar"><br>
+<input type="button" value="subtrair">
+
+<input type="button" value="multiplicar"><br>
+<input type="button" value="dividir">
+
+<p>Resultado</p>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+    <script>
+     function somar(){
+ n1 = window.document.getElementById('n1'.value)
+ n2 = window.document.querySelector('n2'.value)
+ n2 = Number(tn2.value)
+ s = n1 + n2
+ res = window.document.getElementById('res')
+
+    }
+
+
+    function subtrair(){ 
+    var tn1 = window.document.getElementById('txtn3')
+var tn2 = window.document.querySelector('input,txtn4')
+var n1 = Number(tn1.value)
+var n2 = Number(tn2.value)
+var s = n1 - n2
+var res = window.document.getElementById('res1')
+res.innerHTML = `A subtração entre ${n1} - ${n2} é igual a: <strong>${s}</stong>`
+}
+
+function multiplicar(){ 
+    var tn1 = window.document.getElementById('txtn3')
+var tn2 = window.document.querySelector('input,txtn4')
+var n1 = Number(tn1.value)
+var n2 = Number(tn2.value)
+var s = n1 * n2
+var res = window.document.getElementById('res1')
+res.innerHTML = `A multiplicação entre ${n1} * ${n2} é igual a: <strong>${s}</stong>`
+}
+
+function dividir(){ 
+    var tn1 = window.document.getElementById('txtn3')
+var tn2 = window.document.querySelector('input,txtn4')
+var n1 = Number(tn1.value)
+var n2 = Number(tn2.value)
+var s = n1 / n2
+var res = window.document.getElementById('res1')
+res.innerHTML = `A divisão entre ${n1} / ${n2} é igual a: <strong>${s}</stong>`
+}
+
+
+
+
+
+    </script>
+    
+</body>
+</html>
